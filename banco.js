@@ -79,7 +79,7 @@ let cliente = [ {
     "titular": "Bendite Huggett"
 },
 ];
-console.log(cliente[2]);
+// console.log(cliente[2]);
 
 // // O líder tecnológico está muito feliz com nosso trabalho até agora. A essa altura já temos um banco de dados 
 // // com 10 clientes do banco, provavelmente alojados em 10 variáveis diferentes (assumindo que cada variável é 
@@ -93,6 +93,9 @@ for (let i =0; i< cliente.length; i++){
 }
 
 console.log(listasContas[1]);
+
+module.exports = listasContas;
+
 
 // 5. Também nos pedem a criação de um objeto literal chamado banco que terá uma propriedade chamada clientes, 
 // ele será composto pela lista de objetos gerados no ponto anterior.
@@ -139,13 +142,15 @@ let banco = {
 
 
 // console exer 6
-console.log(banco.consultarCliente("Lonnie eijden"))
+// console.log(banco.consultarCliente("Lonnie eijden"))
 
 //console exer 7
-banco.deposito("Lonnie eijden",1000);
+// banco.deposito("Lonnie eijden",1000);
 
 //console exer 8
-banco.saque("Thomasin Latour",1000)
+// banco.saque("Thomasin Latour",1000)
+
+
 
 
 // Bonus
@@ -153,6 +158,23 @@ banco.saque("Thomasin Latour",1000)
 //  Você deve devolver um novo array de objetos, tendo apenas a propriedade que foi passada como string.  
 
 // let array = [ { nome: "Lean", idade: 27 }, { nome: "Eze", idade: 49} ];   
+// function propriedadeUnica(array , idade, string){
+//     let array1 = []
+//     for (i = 0; i< array.length; i++){
+//         idade = array[i].idade
+//         array1.push({idade})
+//     }
+//     return array1;
+// }
+//     if (string == "nome"){
+// for(i=0; i< array.length; i++){
+// nome= array[i].nome
+// array1.push({nome})
+// }
+// return array1
+// }
+
+// console.log(propriedadeUnica(Array,"idade"))
     
     // deve retornar [ { idade: 27 }, { idade: 49 } ]
 // propriedadeUnica(array, "nome") deve retornar [ { nome: "Lean"}, { nome: "Eze" } ]

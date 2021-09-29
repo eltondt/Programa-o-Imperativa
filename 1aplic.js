@@ -1,20 +1,21 @@
-let lista = [
-    {altura: 1.80, sexo: 'M'},
-    {altura: 1.67, sexo: 'F'},
-    {altura: 1.71, sexo: 'M'},
-    {altura: 1.46, sexo: 'F'},
-    {altura: 1.95, sexo: 'M'},
-    {altura: 2.01, sexo: 'M'},
-    {altura: 1.72, sexo: 'F'},
-    {altura: 1.79, sexo: 'M'},
-    {altura: 1.88, sexo: 'M'},
-    {altura: 1.65, sexo: 'F'},
-    {altura: 1.83, sexo: 'M'},
-    {altura: 1.89, sexo: 'M'},
-    {altura: 1.65, sexo: 'F'},
-    {altura: 1.55, sexo: 'F'},
-    {altura: 1.72, sexo: 'F'},
-];
+// let lista = [
+//     {altura: 1.80, sexo: 'M'},
+//     {altura: 1.67, sexo: 'F'},
+//     {altura: 1.71, sexo: 'M'},
+//     {altura: 1.46, sexo: 'F'},
+//     {altura: 1.95, sexo: 'M'},
+//     {altura: 2.01, sexo: 'M'},
+//     {altura: 1.72, sexo: 'F'},
+//     {altura: 1.79, sexo: 'M'},
+//     {altura: 1.88, sexo: 'M'},
+//     {altura: 1.65, sexo: 'F'},
+//     {altura: 1.83, sexo: 'M'},
+//     {altura: 1.89, sexo: 'M'},
+//     {altura: 1.65, sexo: 'F'},
+//     {altura: 1.55, sexo: 'F'},
+//     {altura: 1.72, sexo: 'F'},
+// ];
+let lista = require("./1aplic1")
 
 function calc(lista) {
     lista.sort(function(a,b){
@@ -46,9 +47,9 @@ console.log(`A maior altura do grupo é ${lista[14].altura}`);
 
     let mediaAltMulheres = (somaAltMulheres / qtdMulheres).toFixed(2);
 
-    console.log('---- MEDIA ALTURA MULHERES ---');
-    console.log(`A média de altura das mulheres é ${mediaAltMulheres}`);
-    console.log(`A quantidade de homens é ${qtdHomens}`);
+    // console.log('---- MEDIA ALTURA MULHERES ---');
+    // console.log(`A média de altura das mulheres é ${mediaAltMulheres}`);
+    // console.log(`A quantidade de homens é ${qtdHomens}`);
 
     let listaCinema = [
         {idade: 40, opiniao: 3},
@@ -98,4 +99,4 @@ console.log(`A maior altura do grupo é ${lista[14].altura}`);
     console.log(`O percentual de pessoas que responderam BOM é ${percentualBom}%`);
 }
     
-calcOpiniao(listaCinema);
+// calcOpiniao(listaCinema);
